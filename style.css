@@ -1,0 +1,385 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("https://use.typekit.net/iye2kqr.css"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.box{
+	position: absolute;                       
+}
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
+  display: block; }
+
+
+
+/* #Basic Styles
+================================================== */
+body {
+	
+	font-family: 'Proxima Nova', Fallback, sans-serif;
+}
+body {
+	margin: 0;
+}
+
+/* #Typography
+================================================== */
+body, h1, h2, h3, h4, h5, h6 {
+
+	font-family: 'Proxima Nova', Fallback, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+
+}
+
+h2 {
+	font-size: 2.3rem;
+	line-height: 4rem;
+	font-weight: 300;
+	letter-spacing: .1rem;
+}
+
+h5 {
+	font-size: 1rem;
+	line-height: 2.3rem;
+	font-weight: 300;
+}
+
+a {
+	font-family: 'Proxima Nova', Fallback, sans-serif;
+	text-decoration: none;
+	color: black;
+	padding: 2em 0em 2em 0em;
+	display: inline-block;
+
+}
+
+h6 {
+	display: flex;
+	font-size: .9rem;
+	padding-bottom: 2rem;
+	line-height: 1.5rem;
+}
+
+
+
+
+
+/*-----------Nav Bar---------*/
+
+li {
+  	list-style-type: none;
+	font-size: 1vw;	
+}
+
+
+nav{
+  	margin: 0 9% 0 9%;
+}
+
+nav ul {	  
+	margin: 0;
+  	padding: 0;
+	display: flex;
+}
+
+nav a {
+	font-weight: 400;
+	color: #626568;
+}
+
+a:hover {
+	color: #E25F1C;
+}
+
+.navbar-right {
+	justify-content: flex-end;
+}
+
+.navbar-left {
+	justify-content: flex-start;
+	align-items: center;
+	width: 10%;
+	padding-right: 3vw;
+}
+
+.navbar-right li {
+	margin-left: 2vw;
+
+}
+
+.navbar-collapse {
+	display: flex;
+	justify-content: space-between;
+	padding: .5em 0 .5em 0;
+}
+
+
+
+/*-------header-------------*/
+
+.header {
+	position: relative;
+	background-color:  #626568;
+	width: 100%;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 60px;
+  width: 100%;  
+  background-color: inherit;
+}
+
+.header-content {
+  padding: 2% 9% 2% 9%;
+  margin: 0 auto;
+
+}
+
+
+
+.home {
+		background-color: #FBFBFB;
+}
+
+
+/*---------content---------*/
+
+.content {
+	position: relative;
+	padding: 0% 9% 5% 9%;
+
+
+}
+
+
+
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(100px, 25%) 1fr;
+  grid-template-rows: auto;
+	grid-gap: 1rem;
+
+}
+
+@media (max-width: 650px) { 
+  .table {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 650px) { 
+  .article {
+    grid-column: span 2;
+  }
+}
+
+
+
+
+.article {
+	background-color: white;
+	padding: 1rem 2rem 0 2rem;
+	box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 16px 0px;
+	border-radius: 3px;
+	height: min-content;
+
+}
+
+
+
+/*------Table of Contents-------*/
+
+
+.table {
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 16px 0px;
+	margin-right: 2%;
+	height: auto;
+	border-radius: 3px;
+	padding-bottom: 1rem;
+	height: min-content;
+}
+
+.table h6 {
+	padding: 1rem 1rem 0 1rem;
+}
+
+.article-section {
+	padding: 0 1rem 0 1rem;
+	
+}
+
+.article-section h5 {
+	text-transform: uppercase;
+	font-size: .8rem;
+	color: #5C5C5C;
+}
+
+.article-section h5:hover {
+	color: #C64600;
+}
+
+.table ul {
+	padding-top: 1rem;
+	list-style: none;
+	counter-reset: section;
+}
+
+.table li:before {
+  content: counter(section);
+  counter-increment: section;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 .5rem 0 0;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  text-align: center;
+} 
+
+
+.table li{
+	padding-bottom: 1rem;
+	font-weight: 500;
+	font-size: 1rem;
+	color: #333333;
+	line-height: 1.5rem;
+}
+
+.table li:hover{
+	padding-bottom: 1rem;
+	color: #C64600;
+}
+
+
+/*--------Article-----------*/
+
+.detail {
+	display: flex;
+	font-size: 14px;
+	padding-bottom: 2rem;
+
+}
+
+.detail .svg-icon {
+  	height: 1em;
+  	width: 1em;
+}
+
+.detail span {
+	display:inline-flex;
+	margin-right: 2em;
+}
+
+span div {
+	margin-right: .5em;
+}
+
+.detail > div
+{
+
+  	text-align:start;
+	margin-right:2rem;
+}
+
+.article-p {
+	line-height: 2rem;
+	font-weight: 300;
+	font-size: 14px;
+	margin-bottom: 1rem;
+}
+
+.article-p ul {
+	padding-left: 1rem;
+}
+
+
+/*sections*/
+
+.section {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+.section-title {
+	font-size: 1.6rem;
+	line-height: 4rem;
+	font-weight: 500;
+	letter-spacing: .05rem;
+	margin-bottom: 1rem;
+}
+
+.media-wrapper {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.subsection {
+	font-weight: 500;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+
+.horizontal-list ul {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.horizontal-list li {
+	flex-basis: 20%;
+	padding: 1rem;
+}
+.closebtn {
+    float: right;
+    color:  black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tool {
+	padding-bottom: 2rem;
+}
