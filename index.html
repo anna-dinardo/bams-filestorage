@@ -198,6 +198,16 @@
 								</div>
 							</div>	
 						</div>
+						<script>
+							function openTab(tabName) {
+								var i, x;
+								x = document.getElementsByClassName("containerTab");
+									for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								}
+								document.getElementById(tabName).style.display = "block";
+							}
+						</script>
 
 						<div class="article-p">
 							Now that you know the basics of each cloud service, lets get into a more in depth look of the functionality they offer.
