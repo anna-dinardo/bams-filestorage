@@ -392,7 +392,7 @@ span div {
 
 .article-p {
 	line-height: 2rem;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: .9rem;
 	margin-bottom: 1rem;
 	color: #333333;
@@ -414,7 +414,7 @@ span div {
 	line-height: 4rem;
 	font-weight: 500;
 	letter-spacing: .05rem;
-	margin-bottom: 1rem;
+	/*margin-bottom: 1rem;*/
 	color: #333333;
 }
 
@@ -482,15 +482,17 @@ article-p li {
   background-color: #f1f1f1;
 }
 
-.collapsible:after {
+.collapsible .section-title:after {
   content: '\002B';
   color: #333333;
   float: right;
   margin-left: 5px;
+	font-size: 2rem;
 }
 
-.active:after {
+.active .section-title:after {
   content: "\2212";
+	font-size: 2rem;
 }
 
 .collapse-content {
