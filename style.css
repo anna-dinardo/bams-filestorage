@@ -407,7 +407,7 @@ span div {
 
 .section {
 	margin-top: 2rem;
-	margin-bottom: 4rem;
+	/*margin-bottom: 4rem;*/
 }
 .section-title {
 	font-size: 1.6rem;
@@ -466,4 +466,38 @@ article-p li {
 }
 
 
+
+/**-----collapsible-------*/
+.collapsible {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #333333;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.collapse-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
 
