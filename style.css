@@ -68,18 +68,36 @@ body, h1, h2, h3, h4, h5, h6 {
 
 }
 
-h2 {
-	font-size: 2.3rem;
-	line-height: 4rem;
-	font-weight: 300;
+h1 {
+	font-size: 4rem;
+	line-height: 4.5rem;
+	font-weight:900;
 	letter-spacing: .1rem;
+	color: #333333;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight:900;
+	letter-spacing: .1rem;
+	color: #333333;
+}
+
+h3 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1.5rem;
 }
 
 h5 {
 	font-size: 1rem;
 	line-height: 2.3rem;
-	font-weight: 300;
+	font-weight: 600;
+	color: #333333;
 }
+
 
 a {
 	font-family: 'Proxima Nova', Fallback, sans-serif;
@@ -95,18 +113,32 @@ h6 {
 	font-size: .9rem;
 	padding-bottom: 2rem;
 	line-height: 1.5rem;
+	color: #747474;
 }
 
+.article-title {
+	margin-bottom: 2rem;
+}
+
+.content-type {
+	color: #747474;
+}
+
+.content-category {
+	color: #333333;
+}
 
 
 
 
 /*-----------Nav Bar---------*/
 
-li {
+nav li {
   	list-style-type: none;
-	font-size: 1vw;	
+	font-size: 1rem;	
 }
+
+
 
 
 nav{
@@ -155,8 +187,8 @@ a:hover {
 /*-------header-------------*/
 
 .header {
-	position: relative;
-	background-color:  #626568;
+	/*position: relative;*/
+	background-color:  #FAFAFA;
 	width: 100%;
 }
 
@@ -174,12 +206,19 @@ a:hover {
   padding: 2% 9% 2% 9%;
   margin: 0 auto;
 
+
 }
 
+.header-content h5 {
+	color: #333333;
+}
 
+.header-content h2 {
+	color: #333333;
+}
 
 .home {
-		background-color: #FBFBFB;
+		background-color: white;
 }
 
 
@@ -187,7 +226,7 @@ a:hover {
 
 .content {
 	position: relative;
-	padding: 0% 9% 5% 9%;
+	padding: 5% 9% 5% 9%;
 
 
 }
@@ -196,10 +235,12 @@ a:hover {
 
 
 .content {
-  display: grid;
-  grid-template-columns: minmax(100px, 25%) 1fr;
-  grid-template-rows: auto;
+  	display: grid;
+  	grid-template-columns: minmax(100px, 25%) 1fr;
+  	grid-template-rows: auto;
 	grid-gap: 1rem;
+	background: white;
+	border: 1.5px solid #f5f5f5
 
 }
 
@@ -221,20 +262,44 @@ a:hover {
 .article {
 	background-color: white;
 	padding: 1rem 2rem 0 2rem;
-	box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 16px 0px;
+	/*box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 16px 0px;*/
 	border-radius: 3px;
 	height: min-content;
 
 }
 
+/*---------info-toggle---------*/
+.info-toggle {
+	background: #FAFAFA;
+	border: none;
+	
+}
 
+.info-toggle .table {
+	background: none;
+}
+
+
+.info-toggle .article {
+	background: none;
+	padding: none;
+}
+
+.info-toggle hr {
+	border: 2px solid #C64600;
+}
+
+.info-toggle h3 {
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
 
 /*------Table of Contents-------*/
 
 
 .table {
 	background-color: white;
-	box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 16px 0px;
+	/*box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 16px 0px;*/
 	margin-right: 2%;
 	height: auto;
 	border-radius: 3px;
@@ -254,7 +319,6 @@ a:hover {
 .article-section h5 {
 	text-transform: uppercase;
 	font-size: .8rem;
-	color: #5C5C5C;
 }
 
 .article-section h5:hover {
@@ -271,11 +335,11 @@ a:hover {
   content: counter(section);
   counter-increment: section;
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   margin: 0 .5rem 0 0;
-  border: 1px solid #ccc;
-  border-radius: 100%;
+  /**border: 1px solid #ccc;
+  border-radius: 100%;**/
   text-align: center;
 } 
 
@@ -283,9 +347,9 @@ a:hover {
 .table li{
 	padding-bottom: 1rem;
 	font-weight: 500;
-	font-size: 1rem;
+	font-size: .9rem;
 	color: #333333;
-	line-height: 1.5rem;
+	line-height: 1rem;
 }
 
 .table li:hover{
@@ -300,6 +364,7 @@ a:hover {
 	display: flex;
 	font-size: 14px;
 	padding-bottom: 2rem;
+	color: #393939;
 
 }
 
@@ -307,6 +372,7 @@ a:hover {
   	height: 1em;
   	width: 1em;
 }
+
 
 .detail span {
 	display:inline-flex;
@@ -326,9 +392,10 @@ span div {
 
 .article-p {
 	line-height: 2rem;
-	font-weight: 300;
-	font-size: 14px;
+	font-weight: 500;
+	font-size: .9rem;
 	margin-bottom: 1rem;
+	color: #333333;
 }
 
 .article-p ul {
@@ -348,6 +415,7 @@ span div {
 	font-weight: 500;
 	letter-spacing: .05rem;
 	margin-bottom: 1rem;
+	color: #333333;
 }
 
 .media-wrapper {
@@ -356,10 +424,11 @@ span div {
 }
 
 .subsection {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 1rem;
 	margin-bottom: 1rem;
 	margin-top: 2rem;
+	color: #333333;
 }
 
 
@@ -383,3 +452,18 @@ span div {
 .tool {
 	padding-bottom: 2rem;
 }
+
+
+/*--------paragraph style--------*/
+.doc-link{
+	font-weight: 600;
+	color: #C64600;
+	text-decoration: underline;
+}
+
+article-p li {
+	font-size: .9rem;
+}
+
+
+
