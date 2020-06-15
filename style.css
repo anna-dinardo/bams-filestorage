@@ -461,10 +461,23 @@ span div {
 	text-decoration: underline;
 }
 
-article-p li {
+.article-p li {
 	font-size: .9rem;
 }
 
+.article-subhead {
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	font-weight: 500;
+	letter-spacing: .05rem;
+	/*margin-bottom: 1rem;*/
+	color: #333333;
+}
+
+.article-p-sub {
+	font-weight: 600;
+		color: #333333;
+}
 
 
 /**-----collapsible-------*/
