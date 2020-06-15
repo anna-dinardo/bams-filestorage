@@ -421,6 +421,7 @@ span div {
 .media-wrapper {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	padding: 0 10% 0 10%;
 }
 
 .subsection {
@@ -466,17 +467,16 @@ span div {
 }
 
 .article-subhead {
-	font-size: 1.6rem;
-	line-height: 2.5rem;
-	font-weight: 500;
-	letter-spacing: .05rem;
-	/*margin-bottom: 1rem;*/
+	line-height: 2rem;
+	font-weight: 700;
+	font-size: .9rem;
+	margin-bottom: 1rem;
 	color: #333333;
 }
 
 .article-p-sub {
 	font-weight: 600;
-		color: #333333;
+	color: #333333;
 }
 
 
