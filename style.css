@@ -516,3 +516,67 @@ span div {
   background-color: white;
 }
 
+/*------animation-------*/
+.article-main {
+	animation: transitionIn .75s;
+}
+
+@keyframes transitionIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+
+/*===========RELATED-CONTEN=========*/
+
+.related-container {
+	margin-top: 2rem;
+	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1.75px 4px 0 #c2c2c2;
+	border-radius: .5rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem 1rem 2rem;
+	align-items: center;
+}
+
+	 
+.related-wrapper {
+	padding-top: 1rem;
+	list-style: none;
+	counter-reset: section;
+
+}
+
+.related-container .counter:before {
+  content: "0" counter(section);
+  counter-increment: section;
+} 
+
+
+.description {
+	font-size: .9rem;
+	color: dimgrey;
+}
+
+.rel-title {
+	font-size: 1rem;
+	margin-bottom: .5rem;
+	font-weight: 600;
+}
+
+.rel-link {
+	text-align: right; 
+	color: #C64600; 
+	font-weight: 600; 
+	text-decoration: underline;
+}
+
+.resource-type-icon{
+	padding: 2%;
+}
