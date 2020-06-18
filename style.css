@@ -437,7 +437,7 @@ a:hover {
 }
 
 
-.content-wrapper {
+.counter-wrapper {
 	list-style: none;
 	counter-reset: section;
 
@@ -519,7 +519,7 @@ a:hover {
 
 /*------Related Content------*/
 
-.related-container {
+.related {
 	margin-top: 2rem;
 	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1.75px 4px 0 #c2c2c2;
 	border-radius: .5rem;
@@ -529,30 +529,11 @@ a:hover {
 	align-items: center;
 }
 
-	 
-.related-wrapper {
-	padding-top: 1rem;
-	list-style: none;
-	counter-reset: section;
-
-}
-
-.related-container .counter:before {
+.related .counter:before {
   content: "0" counter(section);
   counter-increment: section;
 } 
 
-
-.description {
-	font-size: .9rem;
-	color: dimgrey;
-}
-
-.rel-title {
-	font-size: 1rem;
-	margin-bottom: .5rem;
-	font-weight: 600;
-}
 
 .rel-link {
 	text-align: right; 
