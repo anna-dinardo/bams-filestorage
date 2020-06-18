@@ -126,6 +126,27 @@ p {
 	margin-bottom: 1rem;
 }
 
+.heading4{
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 500;
+	color: #333333;
+}
+
+.heading5 {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	font-weight: 600;
+	color: #333333;
+}
+
+.heading6 {
+	font-size: .9rem;
+	line-height: 2rem;
+	font-weight: 500;
+	color: #333333;
+}
+
 /*---------wrappers----------*/
 
 .content {
@@ -190,6 +211,10 @@ p {
 
 .center-flex {
 	align-items: center;
+}
+
+.center-flex p {
+	margin-bottom: 0;
 }
 
 .icon {
@@ -390,7 +415,7 @@ a:hover {
 	border: 2px solid #C64600;
 }
 
-.info-toggle h4 {
+.info-toggle .heading4 {
 	margin-left: 3rem;
 	margin-right: 3rem;
 }
