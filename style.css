@@ -77,37 +77,32 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6rem;
-	line-height: 4rem;
-	font-weight: 600;
+	font-size: 2.4rem;
+	line-height: 3rem;
+	font-weight: 700;
 	letter-spacing: .05rem;
 	/*margin-bottom: 1rem;*/
 	color: #333333;
 }
 
 h3 {
-	font-size: 1rem;
-	line-height: 2.3rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #333333;
-}
-
-h4 {
-	font-size: 1rem;
-	line-height: 2.3rem;
-	font-weight: 600;
-	color: #333333;
-}
-
-h5 {
+	font-size: 1.8rem;
+	line-height: 2.2rem;
 	font-weight: 500;
 	color: #333333;
 }
 
-h6 {
-	font-size: .9rem;
-	line-height: 1.5rem;
+h4 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 500;
+	color: #333333;
+}
+
+h5 {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	font-weight: 600;
 	color: #333333;
 }
 
@@ -123,10 +118,13 @@ a {
 p {
 	font-size: .9rem;
 	line-height: 2rem;
-	font-weight: 400;
+	font-weight: 500;
 	color: #333333;
 }
 
+.article p {
+	margin-bottom: 1rem;
+}
 
 /*---------wrappers----------*/
 
@@ -170,6 +168,10 @@ p {
 .sublist-wrap {
 	margin-bottom: 1rem;
 	margin-top: .5rem;
+}
+
+.pwrap {
+	margin-bottom: 1rem;
 }
 
 .media-wrapper {
@@ -388,7 +390,7 @@ a:hover {
 	border: 2px solid #C64600;
 }
 
-.info-toggle h3 {
+.info-toggle h4 {
 	margin-left: 3rem;
 	margin-right: 3rem;
 }
@@ -464,30 +466,34 @@ a:hover {
 
 /**-----collapsible-------*/
 .collapsible {
-	background-color: #fafafa;
+	background-color: white;
 	border-radius: 5px;
 	cursor: pointer;
-	padding: 18px;
 	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
-	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1.75px 4px 0 #c2c2c2;
 }
 
-.active, .collapsible:hover {
-	background-color: #f1f1f1;
+.active, .collapsible h3:hover {
+	color: #C64600;
 }
 
-.collapsible h2:after {
+.collapsible h3:after {
 	content: '\002B';
 	color: #333333;
-	float: right;
-	margin-left: 5px;
+	margin-left: 2rem;
 	font-size: 2rem;
 }
 
-.active .section-title:after {
+.collapsible h3:hover:after {
+	content: '\002B';
+	color: #C64600;
+	margin-left: 2rem;
+	font-size: 2rem;
+}
+
+.active h3:after {
   	content: "\2212";
 	font-size: 2rem;
 }
