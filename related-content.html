@@ -6,7 +6,6 @@
 		
 		<link rel="stylesheet" href="style.css" type="text/css" />
 
-
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		
 		<link href="https://use.typekit.net/txe1iwg.css" rel="stylesheet">
@@ -16,12 +15,12 @@
 	<body id="index" class="home">
 
 		
-		<nav>
+		<div class="header-nav">
 			<div class="navbar-collapse">
 				<ul class="nav navbar-left">
 					<li>
-						<div class="img-wrapper">
-							<img src="bamsblack.svg" alt="identity" />
+						<div class="img-wrapper" style="width: 70px; height="70px;>
+							<img src="bamsblack.svg" alt="BAMS" />
 						</div>
 					</li>
 				</ul>
@@ -45,13 +44,13 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
+		</div>
 		
 
 		<div class="header">
 			<div class="header-content">
-				<h5>
-					&#11013; &nbsp; Learning / Computer Storage / Articles</h5>
+				<h4>
+					&#11013; &nbsp; Learning / Computer Storage / Articles</h4>
 				<h2>
 					Types of File Storage
 				</h2>
@@ -61,99 +60,92 @@
 		<div class="info-toggle content" style="padding: 0 0 0 9%;">
 			<div class="info-toggle table"></div>
 			<div class="article" style="display: flex;">
+				<h3><a href="https://anna-dinardo.github.io/bams-filestorage/">Article</a></h3>
 				<div style="padding-right: 3rem;">
-					<h3 style="color: #747474"><a href="https://anna-dinardo.github.io/bams-filestorage/">Article</a></h3>
-					
-				</div>
-				<div>
-					<h3><a href="related-content.html">Related Content</a></h3>
+					<h3><a href="https://anna-dinardo.github.io/bams-filestorage/related-content.html">Related Content</a></h3>
 					<hr style="margin: 0 auto;">
 				</div>
 			</div>
 		</div>
+		
+		
 		<div class="content">
-			<div class="table">
-				<h6 style="padding-bottom: .5rem;">
+			<div class="table container">
+				
+				<h6>
 					In this article:
 				</h6>
-				<div class="article-section">
-					<h5>
-						Overview
-					</h5>
-					<div>
-						<ul>
-							<li>Cloud vs Nas</li>
-							<li>Rule of Thumb</li>
-						</ul>
-					</div>
-				</div>
-				<div class="article-section">
-					<h5>
-						Sharepoint
-					</h5>
-					<div>
-						<ul>
-							<li>Popular Uses</li>
-							<li>Special Features</li>
-						</ul>
-					</div>
-				</div>
-				<div class="article-section">
-					<h5>
-						OneDrive
-					</h5>
-				</div>
-				<div class="article-section">
-					<h5>
-						Google Drive
-					</h5>
-				</div>
-				<div class="article-section">
-					<h5>
-						Nas
-					</h5>
-				</div>
+				
+				<nav id="navbar-example3" class="navbar navbar-light bg-light">
+				  <nav class="nav nav-pills flex-column">
+					  <a class="nav-link article-section sublist-wrap" href="#item-1"><h3>Overview</h3></a>
+					<nav class="nav nav-pills flex-column">
+					  <a class="nav-link ml-3 my-1" href="#item-1-1">Cloud vs NAS</a>
+					  <a class="nav-link ml-3 my-1" href="#item-1-2">A Good Rule of Thumb</a>
+					</nav>
+					<a class="nav-link article-section sublist-wrap" href="#item-2"><h3>SharePoint</h3></a>
+					<nav class="nav nav-pills flex-column">
+					  <a class="nav-link ml-3 my-1" href="#item-2-1">Popular Uses</a>
+					  <a class="nav-link ml-3 my-1" href="#item-2-2">Special Features</a>
+					</nav>
+					<a class="nav-link article-section sublist-wrap" href="#item-3"><h3>OneDrive</h3></a>
+					<nav class="nav nav-pills flex-column">
+					  <a class="nav-link ml-3 my-1" href="#item-3-1">Popular Uses</a>
+					  <a class="nav-link ml-3 my-1" href="#item-3-2">Special Features</a>
+					</nav>
+					<a class="nav-link article-section sublist-wrap" href="#item-3"><h3>Google Drive</h3></a>
+					<nav class="nav nav-pills flex-column">
+					  <a class="nav-link ml-3 my-1" href="#item-4-1">Popular Uses</a>
+					  <a class="nav-link ml-3 my-1" href="#item-4-2">Special Features</a>
+					</nav>
+					<a class="nav-link article-section sublist-wrap" href="#item-3"><h3>Network Storage</h3></a>
+					<nav class="nav nav-pills">
+					  <a class="nav-link ml-3 my-1" href="#item-5-1">Uses</a>
+					  <a class="nav-link ml-3 my-1" href="#item-5-2">Special Features</a>
+					</nav>
+				  </nav>
+				</nav>
 			</div>
-			<div class="article article-main">
+			<div class="container">
 				<h3 class="content-category"></h3>
-				<h1 class="article-title">Related Content</h1>
+				<h1 class="content-wrap">Related Content</h1>
 
-				<div class="related-wrapper">
-					<div class="related-container">
+				<div class="subsection">
+					<div class="counter-wrapper related">
 						<div class="counter" style="flex-basis: 0%;"></div>
 						<div class="resource-type-icon" style="flex-basis: 10%;"><img src="assets/module-icon.svg"></div>
 						<div style="flex-basis: 70%;">
-							<div class="rel-title">SharePoint Features: In Depth Look</div>
-							<div class="description">Learn to use SharePoint's most efficient tools.</div>
+							<h4>SharePoint Features: In Depth Look</h4>
+							<h6>Learn to use SharePoint's most efficient tools.</h6>
 						</div>
-						<div style="flex-basis: 15%;" class="rel-link">View</div>
+						<h6 style="flex-basis: 15%;" class="rel-link">View</h6>
 					</div>
-					<div class="related-container">
+					<div class="counter-wrapper related">
 						<div class="counter" style="flex-basis: 0%;"></div>
 						<div class="resource-type-icon" style="flex-basis: 10%;"><img src="assets/article-icon.svg"></div>
 						<div style="flex-basis: 70%;">
-							<div class="rel-title">OneDrive File and Folder Syncing</div>
-							<div class="description">Keep your files safe by syncing them to OneDrive</div>
+							<h4>OneDrive File and Folder Syncing</h4>
+							<h6>Keep your files safe by syncing them to OneDrive</h6>
 						</div>
-						<div style="flex-basis: 15%;" class="rel-link">View</div>
+						<h6 style="flex-basis: 15%;" class="rel-link">View</h6>
 					</div>
-					<div class="related-container">
+					<div class="counter-wrapper related">
 						<div class="counter" style="flex-basis: 0%;"></div>
 						<div class="resource-type-icon" style="flex-basis: 10%;"><img src="assets/video-icon.svg"></div>
 						<div style="flex-basis: 70%;">
-							<div class="rel-title">SharePoint Metadata Guide</div>
-							<div class="description">Understand what Metadata is and how to use it to your advantage</div>
+							<h4>SharePoint Metadata Guide</h4>
+							<h6>Understand what Metadata is and how to use it to your advantage</h6>
 						</div>
-						<div style="flex-basis: 15%;" class="rel-link">View</div>
+						<h6 style="flex-basis: 15%;" class="rel-link">View</h6>
 					</div>
-					<div class="related-container">
+					<div class="counter-wrapper related">
 						<div class="counter" style="flex-basis: 0%;"></div>
 						<div class="resource-type-icon" style="flex-basis: 10%;"><img src="assets/doc-icon.svg"></div>
 						<div style="flex-basis: 70%;">
-							<div class="rel-title">Google Drive File History</div>
-							<div class="description">Recover lost file in Google Drive with file history</div>
+							<h4>Google Drive File History</h4>
+							<h6>Recover lost file in Google Drive with file history</h6>
 						</div>
-						<div style="flex-basis: 15%;" class="rel-link">View</div>
+						<h6 style="flex-basis: 15%;" class="rel-link">View</h6>
 					</div>
 				</div>
 			</div>
