@@ -152,6 +152,7 @@ p {
 }
 
 
+
 /*---------wrappers----------*/
 
 .content {
@@ -517,7 +518,6 @@ a:hover {
 }
 
 .collapsible h3:hover:after {
-	content: '\002B';
 	color: #C64600;
 	margin-left: 2rem;
 	font-size: 2rem;
