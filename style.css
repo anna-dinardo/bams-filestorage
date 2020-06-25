@@ -111,7 +111,7 @@ a {
 	font-family: 'Proxima Nova', Fallback, sans-serif;
 	text-decoration: none;
 	color: black;
-	display: inline-block;
+	display: flex;
 
 }
 
